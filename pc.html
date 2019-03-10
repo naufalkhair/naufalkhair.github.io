@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>EnterKomputer - </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://enterkomputer.com/mobile/assets/img/icon/enter-precomposed.png" type="images/gif">
+  <link href="pc_files/css.css" rel="stylesheet">
+  <link href="pc_files/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="pc_files/bootstrap.css">
+ <link rel="stylesheet" href="pc_files/style.css">
+ <link rel="stylesheet" href="pc_files/jquery.css">
+ <style>
+    #section-to-print
+    {
+        margin:auto;
+    }
+
+    #logo
+    {
+        max-width:100%;
+        margin:auto;
+        text-align:center;
+    }
+    
+    #button-print{
+        max-width:100%;
+        margin:auto;
+        text-align:center;
+    }
+    #grand-total{
+        
+        max-width:100%;
+        margin:auto;
+        text-align:center;
+    }
+    .table{
+        max-width:100%;
+        margin:auto;
+    }
+    
+    @media print {
+      #btn-print{
+        visibility: hidden;
+      }
+      
+    }
+</style>
+ 
+</head>
+
+<body>
+
+<div class="col-md-12" id="section-to-print">
+    <div id="logo">
+        <img src="pc_files/footerlogo.png"><br>
+        09-03-2019    </div>
+    <table class="table"><tbody><tr><td>Nama Barang</td><td>Qty</td><td>Subtotal</td></tr><tr><td>AMD
+ Ryzen 5 Pinnacle Ridge 2600 3.4Ghz Up To 3.9Ghz Cache 16MB 65W AM4 
+[Box] - 6 Core - YD2600BBAFBOX - With AMD Wraith Stealth Cooler</td><td>1</td><td>Rp. 2,750,000</td></tr><tr><td>Gigabyte B450 Aorus Pro Wifi (AM4, AMD Promontory B450, DDR4, USB3.1, SATA3)</td><td>1</td><td>Rp. 2,700,000</td></tr><tr><td>Samsung SSD 970 EVO M.2 250GB MZ-V7E250BW - Grs 5th</td><td>1</td><td>Rp. 1,250,000</td></tr><tr><td>WDC 1TB SATA3 64MB - Blue - WD10EZEX - Garansi 2 Th</td><td>1</td><td>Rp. 625,000</td></tr><tr><td>Corsair DDR4 Vengeance LPX PC21000 16GB (2X8GB) - CMK16GX4M2Z2666C16 - For AMD RYZEN</td><td>1</td><td>Rp. 1,735,000</td></tr><tr><td>Zotac GeForce RTX 2060 6GB DDR6 AMP Edition</td><td>1</td><td>Rp. 6,045,000</td></tr><tr><td>Corsair CXM Series 650W Modular - Bronze</td><td>1</td><td>Rp. 1,235,000</td></tr></tbody></table><div id="grand-total">Total: Rp. 16,340,000</div>    
+<div id="button-print">
+    <button id="btn-print" onclick="printPage()">Print</button>
+</div>
+
+</div>
+
+<script>
+function printPage() {
+    window.print();
+}
+</script>    
+
+
+</body></html>
