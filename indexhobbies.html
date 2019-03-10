@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Hobbies - Naufal K.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style2.css">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" id="mySidebar"><br>
+  <h1 class="w3-padding-64 w3-center"><b>NAUFAL<br>KHAIRULYANTO</b></h1>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">MY HOBBIES</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding"><b>NAUFAL KHAIRULYANTO</b></span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="sonnenschein.jpg" style="height:500px; width:700px;" onclick="onClick(this)" alt="Sonnenschein">
+      <img src="kim jong suherman.jpg" style="margin-top:6px; height:500px ;width:350px;" onclick="onClick(this)" alt="with Kim Jong Suherman">
+      <img src="ancol.jpg" style="margin-top: 6px; height: 500px; width: 700px;" onclick="onClick(this)" alt="Calm Evening at Ancol Beach, Jakarta">
+    </div>
+
+    <div class="w3-third">
+      <img src="beachvibe.jpg" style="margin-top: 500px; height:500px; width:750px" onclick="onClick(this)" alt="Beach Vibe">
+    </div>
+    
+    <div class="w3-third">
+      <img src="customsprotection.jpg" style="height:500px; width:350px;" onclick="onClick(this)" alt="Customs Protection">
+      <img src="into the woods.jpg" style="margin-top: 505px; height: 501px; width:350px;" onclick="onClick(this)" alt="Into the Woods">
+    </div>
+  </div>
+
+    <!--full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Hobbies -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about" style="margin-top: 5px;">
+    <h3><b>My Hobbies</b></h3>
+    <img src="photo.jpg" alt="Avatar" class="w3-image w3-padding-16">
+    <div class="w3-content w3-justify" style="max-width:800px">
+      <p>Talking about my hobbies. Well, I always like everything that related to science and technology. I was 5 years old, when I play my very first game on my daddy's phone. The game was called <i>Stack Attack</i> on Siemens phone. Since then, I always like technology and everything related to it. Later, my dad bought a new laptop and it was my first time to use a laptop. The first game that I tried was <i>Platypus</i>. It's a 2D game, the graphic looks like it mades from clay and you play as an "Earth's Guardian", shooting at the Alien's aircrafts.</p>
+      <p>Aaaand, finally I got my first laptop at 7th grade. It was the best laptop ever back then (at least for me lol). The specs it's not too great, but it's quite comfortable for me, as long as I can do my assignments and of course, light gaming. I installed some of the famous games at that time and I was seeking for more comfortable gaming experience. So, I overclocked my laptop using official software but later, I realized that it also reduce my laptop's components age. So I never do that again until this time.</p>
+      <p>Now, my hobbies kinda wider than it was. I found some great channels in YouTube about science, and ehh "IT'S NOT SO BORING AND I FEEL SATISFIED". So I watched so many videos about science in YouTube, mostly from <b><i>Veritasium</i></b>, <b><i>Seeker</i></b>, and <b><i>Crazy Russian Hacker</i></b>. Not just science, I also discovered a lot about technology development, but of course mostly about <b>computers</b>. Channels that I like to watch such as <i>Linus Tech Tips</i>, <b><i>Hardware Canucks</i></b>, <b><i>Dave Lee</i></b>, <b><i>Unbox Therapy</i></b>, <b><i>Jagat Review</i></b> (This is like the best Indonesian news portal about technology), and many more.</p>
+      <p>Besides technologies, I also like music (who doesn't like that?), movies especially sci-fi genre, photography (my friend introduced me and it's like a whole new world for me), geography, culture, history and yes, MEMES. Memes have been a part of my life since a long time ago. My first approach with memes was in 1cak (but now I think it's cringy somehow), then I explored 9gag (I also learn english here from memes) and now my daily dose of memes is from YouTube (kinda like everything comes from YouTube eh?). Channel that influenced me so much is the most subscribed channel in Youtube. Yep, it is <strike>T-Series</strike> Pewdiepie. I know him since he only uploaded games walkhtrough on Youtube. Now, he's like <b><i>The Lord of Memes</i></b> with his loyal followers, like <b><i>Grandayy</i></b>, <b><i>Dolan Dark</i></b>, and <b><i>Mr. Beast</i></b> (sorry Brad, Brad2 and Sive, you're just an editor). And now, he's been struggling with an Indian company (let's not mention it) to keep his throne, to keep YouTube as a platform for individual creators, to keep Youtube better than television. So, let's save YouTube and <b>SUBSCRIBE TO PEWDIEPIE, NOW!</b>.</p>
+      <input type="button" class="MyButton" value="SUBSCRIBE TO PEWDIEPIE" onclick="window.location.href='https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw'"></input>
+      <hr class="w3-opacity">
+      <hr class="w3-opacity">
+      <h3 class="w3-padding-small">Skills</h3>
+      <p class="w3-wide">Gaming</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide">Sports</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:60%">60%</div>
+      </div>
+      <p class="w3-wide">Workstation</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:99%;">99%</div>
+      </div>
+      <hr class="w3-opacity"> 
+  <div class="row">
+    <div class="col-sm-4"> 
+      <h2 style="text-align: center;">Favorite Game</h2>
+      <img src="wot.png" class="img-responsive margin" style="width: 200px; height: 200px; border-radius: 50%; display: block;margin: auto;" alt="Avatar">
+      <h1 style="text-align: center; margin-top: 10px;"><b>WORLD OF TANKS</b></h1>
+    </div>
+    <div class="col-sm-4"> 
+      <h2 style="text-align: center;">Favorite Band</h2>
+      <img src="col.jpg" class="img-responsive margin" style="width: 200px; height: 200px; border-radius: 50%; display: block;margin: auto;" alt="Avatar">
+      <h1 style="text-align: center; margin-top: 10px;"><b>COLDPLAY</b></h1>
+    </div>
+    <div class="col-sm-4"> 
+      <h2 style="text-align: center;">Favorite YouTuber</h2>
+      <img src="pewds.jpg" class="img-responsive margin" style="width: 200px; height: 200px; border-radius: 50%; display: block;margin: auto;" alt="Avatar">
+      <h1 style="text-align: center; margin-top: 10px;"><b>PEWDIEPIE</b></h1>
+    </div>
+   </div>
+      <hr class="w3-opacity"> 
+      <h3 class="w3-padding-small">Reccomended Rig</h3>
+      <p style="text-align: center;">If you interested on building gaming or workstation rig, these are my reccomendation. </p>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">PC</li>
+            <li class="w3-padding-16">AMD Ryzen 5 2600 (6 Cores, 12 Threads, 3.4GHz up to 3.9GHz).</li>
+            <li class="w3-padding-16">Gigabyte B450 Aorus Pro Wifi</li>
+            <li class="w3-padding-16">Zotac GeForce RTX 2060 6GB DDR6 AMP Edition</li>
+            <li class="w3-padding-16">Corsair Vengeance LPX PC21000 16GB (2X8GB)</li>
+            <li class="w3-padding-16">Samsung SSD 970 Evo M.2 250GB + WDC WD10EZEX Blue 1TB SATA3</li>
+            <li class="w3-padding-16">Corsair CXM Series 650W Modular - Bronze</li>
+            <li class="w3-padding-16">
+              <h2>$ 1099.99</h2>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large" onclick="window.location.href='pc.html'">Buy Now</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Laptop</li>
+            <li class="w3-black w3-xlarge">HP Spectre X360 (2019)</li>
+            <li class="w3-padding-16">Intel Core i7-8750H (6 cores, 2.2GHz, up to 4.1GHz)</li>
+            <li class="w3-padding-16">Nvidia GeForce GTX 1050Ti 4GB with Max-Q Design</li>
+            <li class="w3-padding-16">16 GB RAM + 512 GB PCIe NVMe M.2 SSD</li>
+            <li class="w3-padding-16">15.6" 4K IPS anti-glare WLED (3840x2160)</li>
+            <li class="w3-padding-16">Bang & Olufsen Quad Speakers</li>
+            <li class="w3-padding-16">Windows 10 Home 64</li>
+            <li class="w3-padding-16">
+              <h2>$ 2049.99</h2> 
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Buy Now</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>SOCIAL MEDIA</h3>
+        <a href="https://www.facebook.com/naufal.khairulyanto" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/n21kp4ve_" class="fa fa-twitter"></a>
+        <a href="https://plus.google.com/u/0/107232310125936460359" class="fa fa-google"></a>
+        <a href="https://www.instagram.com/n21kp4ve_/" class="fa fa-instagram"></a>
+      </div>
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="photo.jpg" onclick="window.location.href='indexabout.html'" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large" onclick="window.location.href='indexabout.html'">Naufal K.</span><br>
+            <span>About Me</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="venture.jpg" onclick="window.location.href='nexlan.html'" class="w3-left w3-margin-right" style="height:50px;width:50px">
+            <span class="w3-large" onclick="window.location.href='nexlan.html'">My Hobbies</span><br>
+            <span>Technology</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <h4>
+          <span class="w3-tag w3-black w3-margin-bottom">Subscribe to Pewdipie</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Visit Indonesia</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Smakbo Makin Kasohor</span> 
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jabar Kahiji</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bogor Pisan</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">PSG</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Gulag</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jokowi</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Prabowo</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nurhadi Aldo</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">N21KP4VE</span>
+        </h4>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24" style="font-size:18px;">Powered by   <img src="google.png" style="height:25px; margin-left: 3px;"></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+</body>
+</html>
