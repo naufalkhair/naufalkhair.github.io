@@ -5,7 +5,8 @@ body {
     line-height: 1.8;
     color: #f5f6f7;}
 a{font-size:20px;
-  color: #fff;
+  }
+.nav.navbar-nav{color: #fff;
   text-shadow:
   1px 1px 0 #fff,
   -1px -1px 0 #fff,  
@@ -68,6 +69,87 @@ h3{font-size: 20px;}
 			 -ms-transform:rotate(270deg)
 			 -o-transform:rotate(270deg)
 			 transform:rotate(270deg);}
+
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 70px;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center
+  -webkit-text-stroke: 1px #333333;
+   font-weight: bold;
+   text-shadow:
+   3px 3px 0 #999999,
+   -1px -1px 0 #999999,  
+   1px -1px 0 #999999,
+   -1px 1px 0 #999999,
+   1px 1px 0 #999999;
+}
+
+/* Number text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
 
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
@@ -163,7 +245,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
 .w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 .w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
-.w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+.w3-opacity,.w3-hover-opacity:hover{opacity:0.60;}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
 .w3-opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75}
 .w3-greyscale-max,.w3-grayscale-max,.w3-hover-greyscale:hover,.w3-hover-grayscale:hover{filter:grayscale(100%)}
 .w3-greyscale,.w3-grayscale{filter:grayscale(75%)}.w3-greyscale-min,.w3-grayscale-min{filter:grayscale(50%)}
